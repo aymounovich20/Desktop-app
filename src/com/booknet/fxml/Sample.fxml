@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.261" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.booknet.controllers.LoginController">
+   <children>
+      <AnchorPane prefHeight="531.0" prefWidth="600.0" style="-fx-background-color: FFD966;">
+         <children>
+            <Label layoutX="97.0" layoutY="161.0" text="E-mail">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutY="406.0" prefHeight="84.0" prefWidth="600.0" style="-fx-background-color: #000000;">
+               <children>
+                  <ImageView fitHeight="105.0" fitWidth="132.0" layoutX="16.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../ressources/Book%20Net%20(2).png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <ImageView fitHeight="180.0" fitWidth="185.0" layoutX="210.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../ressources/Book%20Net.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="81.0" layoutY="203.0" text="Password">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_email" layoutX="188.0" layoutY="153.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tf_password" layoutX="188.0" layoutY="195.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btn_login" layoutX="263.0" layoutY="257.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: FEC606; -fx-border-radius: 2; -fx-border-color: #000000;" text="LogIn">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="157.0" layoutY="319.0" text="Don't have account ?">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_signup" layoutX="282.0" layoutY="315.0" mnemonicParsing="false" onAction="#switchToSignUp" style="-fx-background-color: transparent; -fx-cursor: hand;" text=" Register Now for FREE !" textFill="#2701ff" underline="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_logad" layoutX="447.0" layoutY="382.0" mnemonicParsing="false" onAction="#switchToAdmin" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Login as administrator" textFill="#2701ff" underline="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="225.0" layoutY="52.0" mnemonicParsing="false" onAction="#switchToIndex" prefHeight="70.0" prefWidth="159.0" style="-fx-background-color: transparent;" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
